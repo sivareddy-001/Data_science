@@ -1,0 +1,23 @@
+Abstraction is the process of hiding internal details and showing only essential functionality.
+
+Example:
+When you drive a car, you only use the steering wheel and pedals — you don’t need to understand how the engine or transmission works internally
+
+-- Python provides abstraction mainly through abstract classes and interfaces (via the abc module).
+
+--"The abc Module"--
+
+--abc stands for Abstract Base Classes.
+You can define abstract classes that contain abstract methods (methods with no implementation).
+
+Syntax:
+from abc import ABC, abstractmethod
+
+class Shape(ABC):  # Abstract class
+    @abstractmethod
+    def area(self):
+        pass  # Abstract method, no implementation
+
+    @abstractmethod
+    def perimeter(self):
+        pass
